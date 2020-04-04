@@ -1,13 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Javascript</title>
 </head>
+
 <body>
     <h1>Welcome to Afreen's Javascript learning</h1>
 
-<script src="first.js"> </script>
+    <h3>Event dblclick</h3>
+    <div ondblclick="division(6,2)">
+        <p>
+           division
+        </p>
+    </div>
+    <button ondblclick="addition(7,3)">Double Click Addition 7+3</button>
+
+
+    <hr />
+    <br/>
+ 
+    
+    <div>
+        <button onclick="greeting(sayHello, helloMessage);">Click me to show greeting in console.</button>
+    </div>
+
+    <br />
+    <hr />
+
+
+    <!--Get Element By ID-->
+    <h3>Get Element By ID</h3>
+    <p id="getelementid1">Display name</p>
+    <p id="getelementid2">Display greeting</p>
+    <button onclick="elementFunction()">Click here to demo by getElementById...</button>
+    <br />
+    <br />
+    <hr />
+
+    <h3>Key Code..</h3>
+
+    <!--Key code-->
+    <input type="text" size="40" onkeypress="myFunction(event)">
+    <p id="keycode">Keycode will Display here...</p>
+
+
+
+
+    <script src="first.js"> </script>
 </body>
+
 </html>

@@ -18,6 +18,7 @@ function sayHello() {
  }
  function greeting(a, b) {
    console.log(a() + b());
+  
  }
 
  function addition(a, b) {
@@ -25,7 +26,7 @@ function sayHello() {
   }
 
   function division(a, b) {
-      alert(a/b);
+      console.log(a/b);
   }
 
   function name(a, b) {
@@ -34,17 +35,45 @@ function sayHello() {
  // Pass `sayHello` as an argument to `greeting` function
  //greeting(sayHello, "JavaScript!");
 
- greeting(sayHello, helloMessage);
+
  addition(5,10);
  name("Afreen","Sultan");
  division(9,3);
 
 
 
- // Return a function
+ // Return a function with two different ways:-
 
+
+
+ //1. First way
 const foo = function(){
     return greeting(sayHello, helloMessage);
 }
-
 foo();
+
+function Hello() {
+    return function() {
+       console.log("Hello bar!");
+    }
+ }
+const bar = Hello();
+bar();
+
+//2. Second way - Use double paranthesis()
+
+Hello()();
+
+//Event keycode
+function myFunction(event) {
+    var x = event.which || event.keyCode;
+    document.getElementById("keycode").innerHTML = "The Unicode value is: " + x;
+  }
+
+//Document: getElementById
+
+function elementFunction() {
+    document.getElementById("getelementid1").innerHTML = "Hello Afreen";
+    document.getElementById("getelementid2").innerHTML = "Good Morning";
+  }
+  
